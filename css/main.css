@@ -1,0 +1,187 @@
+*{
+    box-sizing:border-box;
+}
+
+
+/* --------- Default Visual Style --------- */
+body {
+    font-family:Helvetica, Arial, sans-serif;
+    background-color:#f4f4f4;
+    font-size:16pt;
+}
+
+h1, h2, h3, h4, h5{
+    margin-top:0;
+    font-family: "Bentham", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p{
+    font-size:1rem;
+    margin-bottom:1.5rem;
+}
+
+h1 {
+    font-size:3rem;
+}
+
+h2{
+    font-size:1.5rem;
+}
+
+h3{
+    font-size:1.25rem;
+}
+
+a{
+    color:black;
+    text-decoration-thickness: 0.25rem;
+    text-decoration-color:red;
+}
+
+a:hover{
+    text-decoration-color:blue;
+}
+
+/*  This makes the image responsive. If I made it work right.     */
+img{
+    height:auto;
+    max-width:100%;
+}
+
+
+/* ------- Main Content Area Styles --------- */
+
+main{
+    margin:0 auto;
+    max-width:60vw;
+}
+
+main section{
+    background-color:rgb(255, 255, 255);
+    padding:1rem;
+    margin-bottom:2rem;
+    border-radius:1rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(150, 150, 150, 0.5);
+}
+
+/* ---------- Main Grid Styles ------------ */
+
+.main-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:repeat(3, auto);
+    grid-gap:1em;
+}
+
+#intro{
+    grid-column:1 / 5;
+}
+
+.product-column{
+    grid-column: auto / span 2;
+}
+
+
+/* --------- Hero Section Styling --------- */
+
+section.hero-area{
+    max-height:60vh;
+    height:60vh;
+    margin-bottom:1rem;
+
+    background-image:url("../img/molteni-hero-1200.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    display:grid;
+    grid-template-columns: 2rem 60% 1fr;
+    grid-template-rows:1fr 45% 2rem;
+}
+
+.hero-text{
+    color:white;
+    background-color:rgba(30, 30, 30, 0.6);
+    padding:0.5rem;
+    
+    grid-column:2 / 3;
+    grid-row: 2 / 3;
+    
+    
+}
+
+.cta-main{
+    padding:.5rem;
+    background-color:#d42c06;
+    color:white;
+    display:inline-block;
+    text-decoration:none;
+}
+
+/* ------- Navigation Styles ------- */
+
+
+header{
+    background-color:rgb(100, 100, 100);
+    /* position:fixed; */
+    width:100vw;
+    z-index:50;
+}
+
+nav{
+    display:flex;
+    width:100%;
+    align-items:center;
+}
+
+nav a{
+    display:inline-block;
+    color:white;
+    background-color:rgb(250,100,75);
+    font-size:1.25rem;
+    text-decoration:none;
+    padding:0.25em 0.45em;
+    margin:0;
+    flex-grow:1;
+    flex-shrink:1;
+    flex-basis:auto;
+}
+
+nav a:hover{
+    color:black;
+    background-color:antiquewhite;
+}
+
+
+/* ------------- Media Queries -------------------- */
+
+@media screen and (max-width:69em){
+
+    main{
+        max-width:85vw;
+    }
+
+
+}
+
+@media (max-width:47em){
+    .product-column{
+        grid-column:auto / span 4;
+    }
+}
+
+
+@media (max-width:40em){
+
+    .hero-text{
+        grid-column: 2 / span 2;
+    }
+}
+
+@media (min-width:75em){
+    
+    section.hero-area{
+    background-image:url("../img/superleggera-tableSetting-2560.jpg");
+    }
+}
