@@ -1,0 +1,101 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1em;
+}
+
+/*
+	Setting the defaults for our flex container. Revisit Week 3's tutorial for more detail.
+*/
+.box {
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: space-around;
+	-ms-justify-content: space-around;
+	justify-content: space-around;
+}
+
+/*
+	Starting from a 'mobile-first' approach, setting the flex-basis to 100% means that all the buttons will be the full with of the page until the media-query (at the bottom of the document) kicks in.
+*/
+.box-item-nav {
+	-webkit-flex: 1 1 100%;
+	-ms-flex: 1 1 100%;
+	flex: 1 1 100%;
+}
+
+/*
+	A generic button class to make sure that all buttons follow a similar style and structure.
+*/
+.button {
+	display: block;
+	background-color: #000;
+	color: white;
+	text-decoration: none;
+	transition: background-color 0.3s;
+	padding: 1em;
+	border: 0;
+	width: 100%;
+	text-align: left;
+}
+
+.button:hover, .button:focus {
+	background-color: #CCC;
+}
+
+/*
+	Specific classes for backgrounds to help distinguish the different buttons.
+*/
+.bg1 {
+	background-color: purple;
+}
+
+.bg2 {
+	background-color: green;
+}
+
+.bg3 {
+	background-color: blue;
+}
+
+.bg4 {
+	background-color: red;
+}
+
+button{
+	display:block;
+	background-color:black;
+	color:white;
+	text-decoration:none;
+	padding:1em;
+	border:0;
+	width:100%;
+	text-align:left;
+	transition:background-color 0.3s;
+}
+
+button:hover, button:focus{
+	background-color:#ccc;
+}
+
+.hidden{
+	display:none;
+}
+
+
+/*
+	A media-query which helps to make the navigation buttons wrap differently once the display width is above 27em.
+*/
+@media (min-width: 27em) {
+
+	.box-item-nav {
+		flex-basis: auto;
+	}
+
+}
