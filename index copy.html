@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CSS Intro Practice</title>
+
+		<link rel="stylesheet" href="css/main.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			
+		    <img src="img/logo-placeholder-100.png" alt="it's literaly a placeholder" width="100" height="100">  
+		    
+			
+			<nav> 
+				<!-- 
+		        Anchor tags that start with a hashtag (#) refer to an ID attribute on the existing page, they are useful for linking to different positions on the same page
+		      	-->
+				<a href="#intro">An introduction</a> 
+				<a href="#d.156.3">D.156.3 Armchair</a>
+				<a href="#leggera">Super Leggera </a>
+			</nav>
+		</header>
+		<section class="hero-area">	
+			<div class="hero-text">
+				<h2>Craftsmanship for the Masses</h2>
+				<p>Gio Ponti's chairs exhibit the attention to detail and fine workmanship of the Italian craftsman, married with the technological and manufacturing innovation that brings a quality chair to the masses.</p>
+				<a class="cta-main" href="#">Get Your Chair NOW!</a>
+			</div>
+		</section>
+		
+
+		<!-- Sections help to define the semantic structure of our site, which is, ultimately, up to us -->
+
+		<main class="main-grid">
+		<section id="intro">
+			 <!-- Remember that HTML includes 6 levels of headings. You should make sure to maintain the visual hierarchy of your type. Don't make h2 bigger than h1 -->
+			<h1>The Chairs of Gio Ponti</h1>
+
+			<p><strong>In pursuit of the ultimate ideal of seating.</strong> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		</section><!-- end of #intro -->
+
+		<!-- id attributes are unique and can only be used once per page. -->
+		<section class="product-column" id="d.156.3">
+			<h2>The D.156.3 Armchair</h2>
+			<figure>
+			<img src="img/d1563-onWhite-600.jpg" alt="A closeup of a brown and beige d1563 chair on a white background" width="600" height="420">
+			<figcaption><a href="https://classicdesign.it/d-156-3-armchair-molteni-amp-c.html">D.156.3 by Gio Ponti for Altamira.</a></figcaption>
+			</figure>
+
+			<p>Designed by Gio Ponti and produced for Altamira, an American company founded by the nephew of the Spaniard De Cuevas, was displayed in the company’s showroom in New York, along with furniture by Ico Parisi, Franco Albini, Carlo De Carli, Ignazio Gardella and others, chosen from among the most representative exhibitors at the 10th Milan Triennale.</p>
+
+			<ol>
+			<li>Height: 34”</li>
+			<li>Width: 28”</li>
+			<li>Depth: 38.25”</li>
+			</ol>
+		</section><!-- end of #d.156.3 -->
+
+		<section class="product-column" id="leggera">
+			<h2>The Superleggera</h2>
+
+			<a href="https://www.cassina.com/en/collection/chairs/699-superleggera"><img src="img/superleggera-600.jpg" alt="A black superleggera set in front of a concrete wall" width="600" height="600"></a>
+
+			<p>While the frame exploits the inherent lightness and flexibility of ashwood, the seat surround is in beech, which is more close-grained and stronger. The wood parts are created by machine, and hand-finished, glue being applied with a brush, the excess being wiped off, and the seat being hand-woven. Thus do crafts expertise and industrial innovation come together in what we could call a “prime object”, informed by the chair-making traditions of Chiavari, in Liguria, northern Italy.</p>
+
+			<h3>Key Characteristics</h3>
+			<ul>
+			<li>Lightweight</li>
+			<li>Durable</li>
+			<li>Comfortable</li>
+			</ul>
+		</section><!-- end of #legera -->
+		</main>
+		<footer>
+			<p>This was made by Paul</p>
+
+		</footer>
+	</body>
+
+</html>
